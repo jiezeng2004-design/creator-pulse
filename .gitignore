@@ -1,0 +1,73 @@
+# Environment & secrets
+.env
+.env.x
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Local data (must stay local)
+data/*
+!data/.gitkeep
+browser-profiles/*
+!browser-profiles/.gitkeep
+*.db
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+.pytest_temp/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+.coverage
+htmlcov/
+.tox/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/tsconfig.tsbuildinfo
+*.tsbuildinfo
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Local agent/runtime artifacts
+.codex-runtime/
+.reasonix/
+.codex-*.log
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Local sandbox toolchain caches (not part of the project)
+.uv-cache/
+.uv-python/
+.pnpm-store/
+.pnpm-home/
+
+# Developer probes may contain account-specific observations
+data/*.json
+dev-tools/probe_*.py

@@ -1,0 +1,27 @@
+name: Feature request
+description: Suggest a focused improvement for creators
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What creator workflow is currently hard, slow, or unclear?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed experience
+      description: Describe the smallest useful behavior and what success looks like.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Project boundaries
+      options:
+        - label: This proposal keeps credentials and data local.
+        - label: This proposal does not require CAPTCHA, stealth, or anti-detection behavior.
+        - label: This proposal does not add automatic publishing or replying.

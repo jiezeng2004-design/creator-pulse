@@ -1,0 +1,53 @@
+name: Bug report
+description: Report a reproducible problem in CreatorPulse
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please remove cookies, tokens, browser profiles, databases, personal identifiers, and raw platform responses before submitting.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: "e.g. main @ abc1234"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Demo mode
+        - X
+        - Zhihu
+        - Toutiao
+        - Xiaohongshu
+        - Not platform-specific
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Redacted diagnostics
+      description: Include the sync run error_code or a short console message. Do not paste secrets.
